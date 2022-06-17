@@ -1,17 +1,22 @@
 import React from "react"
 
 import twitter from "../images/Twitter Icon.png";
-import facebook from "../images/Facebook Icon.png";
-import instagram from "../images/Instagram Icon.png";
+import linkedin from "../images/Linkedin Icon.svg";
 import github from "../images/GitHub Icon.png";
 
 export default function Footer() {
     return (
         <div className="footer">
-            <img src={twitter}/>
-            <img src={facebook}/>
-            <img src={instagram}/>
-            <img src={github}/>
+            <a href="https://www.linkedin.com/in/torin-miner/" target="_blank">
+                <img src={linkedin} />
+            </a>
+            <a href="https://twitter.com/bit_Torin" target="_blank">
+                <img src={twitter} />
+            </a>
+            <a href="https://github.com/bitTorin" target="_blank">
+                <img src={github} />
+            </a>
+            
         </div>
     )
 }
