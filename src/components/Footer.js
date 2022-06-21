@@ -10,11 +10,12 @@ export default function Footer() {
             <a href="https://www.linkedin.com/in/torin-miner/" target="_blank">
                 <img src={linkedin} />
             </a>
-            <a href="https://twitter.com/bit_Torin" target="_blank">
-                <img src={twitter} />
-            </a>
+           
             <a href="https://github.com/bitTorin" target="_blank">
                 <img src={github} />
+            </a>
+            <a href="https://twitter.com/bit_Torin" target="_blank">
+                <img src={twitter} />
             </a>
             
         </div>

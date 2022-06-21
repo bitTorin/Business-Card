@@ -45,6 +45,18 @@ button:hover {
   align-items: 'center';
 }
 
+.description {
+  overflow: hidden;;
+}
+
+.description > .section {
+  width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box;
+}
+
 .description > .section > h3 {
   margin-bottom: 0;
   padding: 5px;
@@ -60,6 +72,7 @@ button:hover {
   background-color: #161619;
   height: 64px;
   border-radius: 0 0 10px 10px;
+  overflow: hidden;
 }
 
 .footer > a {
