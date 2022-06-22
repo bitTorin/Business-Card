@@ -1,19 +1,27 @@
 .App {
   margin: auto;
-  color: #FFFFFF;
   text-align: center;
   width: 25vw;
   height: 90vh;
+  margin-top: 2vh;
 }
 
 a {
   text-decoration: none !important;
-  color: #FFFFFF;
+  color: #4A4E74;
 }
 
 a:hover {
   color: #5093E2;
   cursor: pointer;
+}
+
+.main.dark a {
+  color: #FFFFFF;
+}
+
+.main.dark a:hover {
+  color: #5093E2;
 }
 
 button:hover {
@@ -64,15 +72,23 @@ button:hover {
 
 .email {
   background-color: #FFFFFF;
-  border: 0px;
+  border: 1px solid #D1D5DB;
   color: #374151;
 }
 
+.main.dark .email {
+  border: 0px;
+}
+
 .footer {
-  background-color: #161619;
+  background-color: #D5D4D8;
   height: 64px;
   border-radius: 0 0 10px 10px;
   overflow: hidden;
+}
+
+.footer.dark {
+  background-color: #161619;
 }
 
 .footer > a {
@@ -98,6 +114,7 @@ button:hover {
 .header > img {
   border-radius: 10px 10px 0 0;
   width: 100%;
+  display: block;
 }
 
 h2, h5 {
@@ -105,15 +122,28 @@ h2, h5 {
   padding: 10px;
 }
 
+.name {
+  color: #2B283A;
+  padding-top: 0px;
+}
+
+.main.dark .name {
+  color: #FFFFFF !important;
+}
+
 .intro {
   padding-bottom: 20px;
 }
 
 .main {
-  background-color: #1A1B21;
+  background-color: #F5F5F5;
   height: 399px;
-  padding: 35px;
+  padding: 0px 35px 35px 35px;
   overflow: hidden;
+}
+
+.main.dark {
+  background-color: #1A1B21;
 }
 
 .portfolio {
@@ -128,6 +158,74 @@ h2, h5 {
 }
 
 .title {
+  color: #F47D27;
+}
+
+.main.dark .title {
   color: #F3BF99;
 }
+
+.toggler {
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  background-color: #F5F5F5;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.toggler.dark {
+  background-color: #1A1B21;
+}
+
+.togglerSlider {
+  width: 25px;
+  height: 13px;
+  background-color: #1A1B21;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #1A1B21;
+  box-sizing: content-box;
+}
+
+.dark .togglerSlider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+.togglerSliderCircle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.dark .togglerSliderCircle {
+  background-color: #1A1B21;
+}
+
+.dark .togglerSlider {
+  justify-content: flex-end;
+}
+
+.section h3 {
+  color: #2B283A;
+}
+
+.section small {
+  color: #4A4E74;
+}
+
+.main.dark .section h3 {
+  color: #F5F5F5;
+}
+
+.main.dark .section small {
+  color: #DCDCDC;
+}
+
 

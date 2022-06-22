@@ -4,9 +4,9 @@ import twitter from "../images/Twitter Icon.png";
 import linkedin from "../images/Linkedin Icon.svg";
 import github from "../images/GitHub Icon.png";
 
-export default function Footer() {
+export default function Footer(props) {
     return (
-        <div className="footer">
+        <div className={props.darkMode ? "footer dark": "footer"}>
             <a href="https://www.linkedin.com/in/torin-miner/" target="_blank">
                 <img src={linkedin} />
             </a>
